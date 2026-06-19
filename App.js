@@ -5,7 +5,7 @@ export default function App() {
     const [selecoes, setSelecoes] = useState([]);
 
     useEffect(() => {
-        fetch('https://github.com/biamiotto/atividade-copa.git')
+        fetch('https://raw.githubusercontent.com/biamiotto/atividade-copa/refs/heads/main/db.json')
             .then((response) => response.json())
             .then((data) => {
                 setSelecoes(data);
